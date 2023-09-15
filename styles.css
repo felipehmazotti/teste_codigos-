@@ -1,0 +1,23 @@
+.word {
+    font-size: 36px;
+    font-weight: bold;
+    animation: changePosition 2s linear infinite;
+}
+
+@keyframes changePosition {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

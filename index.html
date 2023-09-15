@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudança de Posição de Letras Automática</title>
+    
+    <!-- Código de movimentação de letra autómatico -->
+    <style>
+        .word {
+            font-size: 36px;
+            font-weight: bold;
+            animation: changePosition 2s linear infinite;
+        }
+
+        @keyframes changePosition {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(20px);
+            }
+            50% {
+                transform: translateX(0);
+            }
+            75% {
+                transform: translateX(-20px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="word" id="word">20%</div>
+</body>
+</html>
